@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #007BFF;
+      color: #fff;
+    }
+
+    .header img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #f8f9fa;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+      }
+
+      .header img {
+        max-width: 80px;
+      }
+
+      .content h1 {
+        font-size: 20px;
+      }
+
+      .content p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="{{imageUrl}}" alt="Logo">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="content">
+      <p>{{content}}</p>
+    </div>
+    <div class="footer">
+      &copy; 2025 Your Company. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
